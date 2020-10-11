@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Assignment</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+      @media screen and (min-width: 900px) {
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: black;
+    }
+    li{
+      float: left;
+    }
+    li a{
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .container-1{
+      float: left;
+
+    }
+    .container-2{
+       float: left;    
+       margin-left: 500px;
+    }
+    .container-3{
+      margin-left:400px ;
+    
+    }
+      }
+  </style>
+</head>
+<body  style="background-color: black;">
+  <nav>
+  
+    <ul>
+      <li><h3 style="color: white;font-family:cursive; margin: 10px;">BAKERY SHOP</h3></li>
+      <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT3GHDp0TrvGvg7cGle5lNka_edwLJNhI8cEQ&usqp=CAU" height="80px"></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Buy</a></li>
+      <li><a href="#"> Learn More</a></li>
+      <li><a href="#"><img src="data:image/png;base64,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" height="30px" width="40px"></a></li>
+      
+    </ul>
+  </nav>
+  <div class="row">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="https://www.joymondcakeworld.com/images/sliders/004.jpg" alt="img1" style="width:100%;">
+        </div>
+  
+        <div class="item">
+          <img src="https://cdn.shopify.com/s/files/1/0070/8005/0752/files/lains_bake_shop_chocolate-pastries-ingredients_f8035962-8797-4438-8be2-1d059c16db6c_2048x.png?v=1546398905" alt="img2" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="https://cdnimg.webstaurantstore.com/images/articles/291/sheet-cake-pan-size-header.jpg" alt="img3" style="width:100%;">
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+<!--cards-->
+<center>
+<h3 style="color: thistle;font-family: cursive;">Our specialities</h3>
+</center>
+<div class="container">
+  <div class="container-1">
+    <div class="card" style="width:300px">
+      <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">French veggie Roll</h4>
+        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur.</p>
+        <a href="#" class="btn btn-primary">Order Now</a>
+      </div>
+    </div>
+  </div>
+    
+    <div class="container-2">
+      <div class="card" style="width:300px">
+        <img src="https://www.sortiraparis.com/images/1004/77153/379398-aki-boulanger-le-boulangerie-franco-japonaise-super-gourmande.jpg" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">French Boulanger</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, impedit.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="container-3">
+        <div class="card" style="width:300px">
+          <img src="https://i.pinimg.com/736x/6e/42/8d/6e428dc94db9bf0a47c6d8c202132e3d.jpg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Christmas Biscuits</h4>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam beatae digniss.</p>
+            <a href="#" class="btn btn-primary">Order Now</a>
+          </div>
+        </div>
+  
+      </div>
+      </div>
+      <br><br><br>
+      <footer>
+        <div class="col-md-4">
+          <h3>We provide you our best services!</h3>
+        </div>
+        <div class="col-md-4">
+          <h3>You never regret our services</h3>
+          <h4>Email us: bakery@gmail.com</h4>
+          <h4>Call us:+91(xxxxxxxxx)</h4>
+        </div>
+        <div class="col-md-4">
+          <h3>For more details contact us</h3>
+        </div>
+        <center>
+        <div style="color: thistle;" class="footer">© 2020 Copyright &Developed By
+       <a href="#"> SHIVANI SAINI</a>
+        </div>
+      </center>
+  </footer>
+      
+      
+
+</body>
+
+
+</html>
